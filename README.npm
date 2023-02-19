@@ -1,0 +1,48 @@
+# Another guacamole-common-js package?
+
+Yes. To address issues such as 
+[GUACAMOLE-520](https://issues.apache.org/jira/browse/GUACAMOLE-520) (related to Japanese keyboard layouts), on
+older versions of guacamole-common-js, and perhaps others in the future.
+
+
+## How does it relate to Padarom's [npm package](https://www.npmjs.com/package/guacamole-common-js)?
+
+Padarom's package is forked from the version of guacamole-client by Glyptodon, Inc -
+[glyptodon/guacamole-client](https://github.com/glyptodon/guacamole-client). This fork is directly from the original
+[apache/guacample-client](https://github.com/apache/guacamole-client). At the time of this writing, 
+[apache/guacamole-client](https://github.com/apache/guacamole-client) doesn't have branches per version, 
+but does have tags. We use these tags as the basis for the corresponding version branches (such as v1.3.0).
+
+We note that the _dist_ files produced for version 1.3.0 of this package are identical to those
+produced by Padarom's [guacamole-common-js v1.3.0](https://www.npmjs.com/package/guacamole-common-js/v/1.3.0) version,
+(except with regard to the fixes due to
+[GUACAMOLE-520](https://issues.apache.org/jira/browse/GUACAMOLE-520)). Not a surprise as we use the gulp machinery from
+Padarom's implementation (thank you).
+
+## Installation
+
+You can install this library via npm:
+
+```
+npm install --save @cyolosecurity/guacamole-common-js
+```
+
+```js
+import Guacamole from '@cyolosecurity/guacamole-common-js';
+```
+
+
+## Version numbers
+The npm version we use will correspond to the tag in the original Apache repo, with an additional number corresponding
+to the patch.
+
+
+# Reporting problems
+
+_We're not a maintainer or contributor to the original guacamole repository (at least not yet)._
+
+Please report any bugs encountered by opening a new ticket at the Trac system hosted at:
+
+    http://guac-dev.org/trac/
+
+Any bugs or questions to this fork specifically can be asked via issues on GitHub.
