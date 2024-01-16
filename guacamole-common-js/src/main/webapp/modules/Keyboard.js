@@ -582,6 +582,11 @@ Guacamole.Keyboard = function Keyboard(element) {
         0xFFEA: true, // Right alt
         0xFFEB: true, // Left super/hyper
         0xFFEC: true  // Right super/hyper
+
+        // The following is based on Kazuhiko Tanaka comment from
+        // 19/Jun/20 02:14 on https://issues.apache.org/jira/browse/GUACAMOLE-520
+        0xFF28: true, // Zenkaku
+        0xFF29: true, // Hankaku
     };
 
     /**
